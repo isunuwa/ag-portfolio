@@ -754,9 +754,6 @@ main{
   transition: var(--transition);
   margin-bottom: 10px;
 }
-.footer-content .social-links p{
-  font-size: 13px;
-}
 /* reponsice navbar */
 .reponsive-div{
   display: none;
@@ -967,14 +964,17 @@ main{
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background-color: rgba(7, 17, 28) !important;
+    background-color: rgba(7, 17, 28);
+    transition: var(--transition);
   }
   .reponsive-div .left-respo-nav .nav-div .social-links ul{
     display: grid;
     grid-template-columns: repeat(2, minmax(60px, 60px));
     list-style: none;
+    background-color: rgba(7, 17, 28);
   }
   .reponsive-div .left-respo-nav .nav-div .social-links ul li{
+    margin: 15px 0;
     text-align: center;
   }
   .reponsive-div .left-respo-nav .nav-div .social-links ul li a{
@@ -983,7 +983,6 @@ main{
 }
 .reponsive-div .left-respo-nav .nav-active{
   transform: translateX(0%);
-  background-color: rgb(31, 125, 226) !important;
   z-index: 999;
 }
 /* animation */
