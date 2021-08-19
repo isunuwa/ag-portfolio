@@ -925,15 +925,6 @@ main{
     width: 60%;
     transform: translateX(-100%);
     transition: transform 0.4s ease-in;
-  }
-  .reponsive-div .left-respo-nav .nav-div .nav-link{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 62vh;
-    /* top: 8vh; */
-    margin: 0;
     background-color: rgba(7, 17, 28);
   }
   .reponsive-div .nav-link{
@@ -943,6 +934,8 @@ main{
     align-items: center;
   }
   .reponsive-div .nav-link li a{
+    display: inline-block;
+    padding: 20px 10px;
     text-decoration: none;
     color: var(--primary-color);
   }
@@ -955,7 +948,8 @@ main{
     border-top: 1px solid var(--primary-transparent);
     font-size: 14px;
     width: 120px;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
   .reponsive-div .left-respo-nav .nav-div .social-links{
     z-index: 20;
