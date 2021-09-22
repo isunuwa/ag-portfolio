@@ -41,17 +41,14 @@ const toggleNav = function () {
 
 // nav div
 const navSlide = () => {
-  // toggle nav
   burger.addEventListener("click", toggleNav);
 };
 
-navSlide();
-
+// nav links action on after the link is closed on opened navbar link
 const navClick = () => {
-  // toggle nav
   navLinks.forEach((navLink) => {
     navLink.addEventListener("click", toggleNav);
   });
 };
 
-navClick();
+burger.addEventListener("click", navClick(), navSlide());
